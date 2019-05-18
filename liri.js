@@ -6,12 +6,8 @@ var axios = require('axios');
 
 var Spotify = require('node-spotify-api');
  
-var spotify = new Spotify({
-  id: process.env.SPOTIFY_ID,
-  secret: process.env.SPOTIFY_SECRET
-});
+var spotify = new Spotify(keys.spotify);
 
-//var spotify = new Spotify(keys.spotify);
 
 
 
