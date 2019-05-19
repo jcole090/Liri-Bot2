@@ -10,7 +10,6 @@ var spotify = new Spotify(keys.spotify);
 
 
 
-
 const movieRequest = title => axios.get(`http://www.omdbapi.com/?apikey=${process.env.OMDB_KEY}&t=${title}`)
 .then(function (response) {
   console.log(response);
@@ -38,9 +37,10 @@ const songRequest = song => spotify
 })
 .catch(function(err) {
   console.log(err);
+
 });
 
-songRequest("hello") 
+songRequest("All the Small Things") 
 
 //"node liri.js concert-this <artist/band name here>"
 //"https://rest.bandsintown.com/artists/" 
